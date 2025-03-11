@@ -173,9 +173,9 @@ object.align-center {
 
 div.sidebar {
   margin: 0 0 0.5em 1em;
-  border: 1px solid #ddb;
+  border: 1px solid var(--bs-border-color, #ddb);
   padding: 7px 7px 0 7px;
-  background-color: #ffe;
+  background-color: var(--bs-secondary-bg, #ffe);
   width: 40%;
   float: right;
 }
@@ -434,6 +434,11 @@ dl.glossary dt {
   font-style: oblique;
 }
 
+/* Add semicolon between classifiers as Sphinx does not seem to */
+.classifier:before {
+  content: " : ";
+}
+
 abbr,
 acronym {
   border-bottom: dotted 1px;
@@ -460,7 +465,7 @@ td.linenos pre {
   padding: 5px 0px;
   border: 0;
   background-color: transparent;
-  color: #aaa;
+  color: var(--bs-gray-500,#aaa);
 }
 
 table.highlighttable {
