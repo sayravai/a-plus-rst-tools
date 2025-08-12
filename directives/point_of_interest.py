@@ -174,7 +174,7 @@ class PointOfInterest(Directive):
         })
         hidelink = aplus_nodes.html('a', {
             'href':'#' + content_name,
-            'data-toggle':'collapse'})
+            'data-bs-toggle':'collapse'})
         hidelink.append(icon)
 
         if ":math:" in title_text:
